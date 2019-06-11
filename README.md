@@ -2,7 +2,7 @@
 PM2 module to send logs to Sentry
 
 #### Options:
-- sentry_dsn: DNS of Sentry instance (something like `https://<code>@<hostname>/<projectId>`, for Sentry.io it can be found on https://sentry.io/settings/minglechain/projects/<project-name>/keys/);
+- sentry_dsn: DSN of Sentry instance (something like `https://<code>@<hostname>/<projectId>`, for Sentry.io it can be found on https://sentry.io/settings/<organization>/projects/<project-name>/keys/);
 - apps: comma-separated list of applications which logs should be send to Sentry; apps names can be retrieved from first column in `pm2 ls` table.
 - environment: see https://docs.sentry.io/enriching-error-data/environments/?platform=node
 
