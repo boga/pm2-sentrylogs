@@ -13,10 +13,12 @@
     "url": "https://github.com/boga/pm2-sentrylogs"
   },
   "config": {
+    "apps": "",
+    "apps_comment": "comma-separated list of applications which logs should be send to Sentry",
     "sentry_dsn": "https://<code>@<hostname>/<projectId>",
     "sentry_dsn_comment": "DNS of Sentry instance",
-    "apps": "",
-    "apps_comment": "comma-separated list of applications which logs should be send to Sentry"
+    "environment": "develop",
+    "environment_comment": "https://docs.sentry.io/enriching-error-data/environments/?platform=node"
   },
   "apps": [
     {

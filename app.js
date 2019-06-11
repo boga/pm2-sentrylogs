@@ -7,6 +7,7 @@ const conf = pmx.initModule();
 pm2.Client.launchBus(function (err, bus) {
     sentry.init({
         dsn: conf.sentry_dsn,
+        environment: conf.environment,
     });
 
     const trackedApps = (conf.apps || "").split(",");
